@@ -7,20 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    <nav>
-        <span>JM</span>
-        <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Contact</li>
+    <nav class="nav">
+        <span class="nav__logo">JM</span>
+        <input class="nav__checkbox" type="checkbox" role="button" />
+        <div class="nav__hamburger">
+            <div></div>
+        </div>
+        <ul class="nav__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <button>Get A Quote</button>
+        <button class="btn nav__btn">Get A Quote</button>
     </nav>
     <header>
         <span>James Martin</span>
@@ -80,7 +84,7 @@
             <p>Internet of things is coming so quickly, we as designers will have to design UI and UX for more and more things in the future.</p>
             <a href="#">Read Full Article</a>
         </div>
-        <button>Load More</button>
+        <button class="btn">Load More</button>
     </article>
     <article>
         <h3>Contact Me</h3>

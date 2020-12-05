@@ -1,0 +1,21 @@
+.btn {
+  background-color: transparent;
+  color: #2046f2;
+  max-width: 7em;
+  padding: 0.5em 1.5em;
+  border: 1px solid #2046f2;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+  @media (min-width: 1000px) {
+    max-width: unset;
+  }
+}

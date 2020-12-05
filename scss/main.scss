@@ -1,5 +1,14 @@
 @import './base/reset';
 @import './base/typography';
+@import './base/modules';
+@import './layout/navigation';
 img {
-  max-width: 10em;
+  max-width: 115px;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+  padding: 0.5em;
 }
