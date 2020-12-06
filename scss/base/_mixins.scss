@@ -1,0 +1,7 @@
+@mixin header-slidein($name, $duration, $delay) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: cubic-bezier(0.15, 1.15, 0.87, 1.1);
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+}

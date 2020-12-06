@@ -36,3 +36,11 @@ body {
     font-size: 1.8rem;
   }
 }
+
+.header {
+  span {
+    @media (min-width: 800px) {
+      font-size: 1.8rem;
+    }
+  }
+}
