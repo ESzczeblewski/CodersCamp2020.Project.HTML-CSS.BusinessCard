@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 3;
   @media (min-width: 800px) {
     padding: 1em 3em;
     align-items: center;
@@ -19,7 +19,7 @@
     transform: translateX(-50%);
   }
   @media (min-width: 1100px) {
-    padding: 1.5em 8em;
+    padding: 1.5em 5%;
   }
 
   &__links {
