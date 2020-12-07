@@ -523,8 +523,45 @@ body {
   fill: #2046f2;
 }
 
-img {
-  max-width: 115px;
+.motto {
+  position: relative;
+  height: 16em;
+  max-width: 62.5em;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 10em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.motto .border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  max-width: 58em;
+  height: 25em;
+  background: #2046f2;
+  z-index: -1;
+}
+
+.motto .border__inner {
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+  bottom: 0.3em;
+  left: 0.3em;
+  background-color: #ffffff;
+}
+
+.motto img {
+  width: 10em;
+}
+
+.motto__phrase {
+  background-color: #ffffff;
+  display: inline-block;
+  align-self: flex-start;
 }
 
 body {

@@ -1,0 +1,42 @@
+@import '../base/variables';
+
+.motto {
+  position: relative;
+  height: 16em;
+  max-width: 62.5em;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 10em;
+  display: flex;
+  align-items: flex-end;
+
+  .border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 58em;
+    height: 25em;
+    background: $main-blue;
+    z-index: -1;
+
+    &__inner {
+      position: absolute;
+      top: 0.3em;
+      right: 0.3em;
+      bottom: 0.3em;
+      left: 0.3em;
+      background-color: $main-white;
+    }
+  }
+
+  img {
+    width: 10em;
+  }
+
+  &__phrase {
+    background-color: $main-white;
+    display: inline-block;
+    align-self: flex-start;
+  }
+}
