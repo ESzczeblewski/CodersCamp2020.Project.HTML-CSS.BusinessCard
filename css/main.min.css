@@ -438,7 +438,7 @@ h3 {
   overflow: hidden;
   height: 60vh;
   width: 90%;
-  max-width: 68em;
+  max-width: 63em;
   min-height: 35em;
   margin: auto;
   display: flex;
@@ -460,7 +460,7 @@ h3 {
 }
 
 .header__banner {
-  font-size: clamp(18rem, 55vw, 56rem);
+  font-size: clamp(18rem, 50vw, 54rem);
   z-index: -1;
   color: #f1f1f1ad;
   margin-top: calc(-100% + (-6em));
