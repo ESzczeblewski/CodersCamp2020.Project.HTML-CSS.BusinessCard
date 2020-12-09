@@ -5,3 +5,26 @@
   animation-delay: $delay;
   animation-fill-mode: forwards;
 }
+
+@mixin article-border($left, $height) {
+  .border {
+    background: $main-blue;
+    position: absolute;
+    top: 50%;
+    left: $left;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 58em;
+    height: $height;
+    z-index: -1;
+
+    &__inner {
+      background-color: $main-white;
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
+      bottom: 0.5em;
+      left: 0.5em;
+    }
+  }
+}

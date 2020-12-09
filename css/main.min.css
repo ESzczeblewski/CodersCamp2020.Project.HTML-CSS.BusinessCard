@@ -94,6 +94,11 @@ body {
   font-weight: 400;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: clamp(1rem, 8vw, 6.5rem);
+}
+
 .btn {
   font-size: 1.3rem;
   font-weight: 700;
@@ -137,6 +142,16 @@ body {
   .header span {
     font-size: 1.8rem;
   }
+}
+
+.motto__phrase {
+  color: #585858;
+}
+
+.motto__name {
+  font-family: 'Allura', cursive;
+  font-size: clamp(1rem, 6vw, 3.6rem);
+  color: #585858;
 }
 
 .btn {
@@ -207,7 +222,7 @@ body {
 
 @media (min-width: 1100px) {
   .nav {
-    padding: 1.5em 5%;
+    padding: 1.5em 7.5em;
   }
 }
 
@@ -423,7 +438,7 @@ body {
   overflow: hidden;
   height: 60vh;
   width: 90%;
-  max-width: 63em;
+  max-width: 68em;
   min-height: 35em;
   margin: auto;
   display: flex;
@@ -445,7 +460,7 @@ body {
 }
 
 .header__banner {
-  font-size: clamp(18rem, 50vw, 54rem);
+  font-size: clamp(18rem, 55vw, 56rem);
   z-index: -1;
   color: #f1f1f1ad;
   margin-top: calc(-100% + (-6em));
@@ -525,43 +540,63 @@ body {
 
 .motto {
   position: relative;
-  height: 16em;
+  height: 70vw;
+  max-height: 35.6em;
   max-width: 62.5em;
   margin: auto;
-  margin-top: 3em;
-  margin-bottom: 10em;
+  margin-top: 1em;
   display: flex;
   align-items: flex-end;
 }
 
 .motto .border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  max-width: 58em;
-  height: 25em;
   background: #2046f2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 58em;
+  height: 90%;
   z-index: -1;
 }
 
 .motto .border__inner {
-  position: absolute;
-  top: 0.3em;
-  right: 0.3em;
-  bottom: 0.3em;
-  left: 0.3em;
   background-color: #ffffff;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
 }
 
-.motto img {
-  width: 10em;
+.motto__person {
+  width: 46vw;
+  max-width: 23.5em;
+  margin-left: clamp(1em, 2vw, 3em);
 }
 
 .motto__phrase {
   background-color: #ffffff;
-  display: inline-block;
-  align-self: flex-start;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: clamp(20%, 42%, 19em);
+}
+
+.motto__phrase h3 {
+  margin-bottom: 0.5em;
+}
+
+.motto__phrase p {
+  margin-bottom: 1em;
+}
+
+.motto__name {
+  position: absolute;
+  right: clamp(1rem, 8vw, 3.3em);
+  bottom: 1.2em;
 }
 
 body {
