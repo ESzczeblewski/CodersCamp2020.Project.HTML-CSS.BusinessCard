@@ -10,6 +10,11 @@ body {
   font-weight: $font-med;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: clamp(1rem, 8vw, 6.5rem);
+}
+
 .btn {
   font-size: 1.3rem;
   font-weight: $font-bold;
@@ -43,4 +48,15 @@ body {
       font-size: 1.8rem;
     }
   }
+}
+
+// MOTTO ARTICLE
+.motto__phrase {
+  color: $motto-font;
+}
+
+.motto__name {
+  font-family: 'Allura', cursive;
+  font-size: clamp(1rem, 6vw, 3.6rem);
+  color: $motto-font;
 }

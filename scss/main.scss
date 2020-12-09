@@ -3,9 +3,7 @@
 @import './base/modules';
 @import './layout/navigation';
 @import './layout/header';
-img {
-  max-width: 115px;
-}
+@import './layout/motto';
 
 body {
   max-width: 90em;
