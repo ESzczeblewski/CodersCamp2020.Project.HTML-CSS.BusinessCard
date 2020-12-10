@@ -138,6 +138,22 @@ h3 {
   }
 }
 
+.header__banner {
+  font-size: clamp(18rem, 50vw, 54rem);
+  color: #f1f1f1ad;
+}
+
+.header__banner-small {
+  font-size: clamp(7rem, 20vw, 22.5rem);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header span {
+  font-weight: 700;
+  color: #8f8f8ffd;
+}
+
 @media (min-width: 800px) {
   .header span {
     font-size: 1.8rem;
@@ -460,9 +476,7 @@ h3 {
 }
 
 .header__banner {
-  font-size: clamp(18rem, 50vw, 54rem);
   z-index: -1;
-  color: #f1f1f1ad;
   margin-top: calc(-100% + (-6em));
   animation-name: slidein-top;
   animation-duration: 1.5s;
@@ -473,14 +487,9 @@ h3 {
 
 .header__banner-small {
   z-index: 1;
-  color: #ffffff;
-  font-size: clamp(7rem, 20vw, 22.5rem);
-  text-transform: uppercase;
 }
 
 .header span {
-  font-weight: 700;
-  color: #8f8f8ffd;
   z-index: 2;
 }
 

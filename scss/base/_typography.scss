@@ -23,40 +23,57 @@ h3 {
   }
 }
 
-.nav__logo {
-  font-weight: $font-bold;
-  font-size: 3.5rem;
-  @media (min-width: 1100px) {
-    font-size: 4.5rem;
+.nav {
+  &__logo {
+    font-weight: $font-bold;
+    font-size: 3.5rem;
+    @media (min-width: 1100px) {
+      font-size: 4.5rem;
+    }
   }
-}
 
-.nav__list {
-  font-size: 2.5rem;
-  @media (min-width: 800px) {
-    font-size: 1.6rem;
-    font-weight: $font-light;
-  }
-  @media (min-width: 1100px) {
-    font-size: 1.8rem;
+  &__list {
+    font-size: 2.5rem;
+    @media (min-width: 800px) {
+      font-size: 1.6rem;
+      font-weight: $font-light;
+    }
+    @media (min-width: 1100px) {
+      font-size: 1.8rem;
+    }
   }
 }
 
 .header {
+  &__banner {
+    font-size: clamp(18rem, 50vw, 54rem);
+    color: #f1f1f1ad;
+  }
+
+  &__banner-small {
+    font-size: clamp(7rem, 20vw, 22.5rem);
+    color: $main-white;
+    text-transform: uppercase;
+  }
+
   span {
+    font-weight: $font-bold;
+    color: #8f8f8ffd;
+
     @media (min-width: 800px) {
       font-size: 1.8rem;
     }
   }
 }
 
-// MOTTO ARTICLE
-.motto__phrase {
-  color: $motto-font;
-}
+.motto {
+  &__phrase {
+    color: $motto-font;
+  }
 
-.motto__name {
-  font-family: 'Allura', cursive;
-  font-size: clamp(1rem, 6vw, 3.6rem);
-  color: $motto-font;
+  &__name {
+    font-family: 'Allura', cursive;
+    font-size: clamp(1rem, 6vw, 3.6rem);
+    color: $motto-font;
+  }
 }
