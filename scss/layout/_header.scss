@@ -27,9 +27,7 @@
   }
 
   &__banner {
-    font-size: clamp(18rem, 50vw, 54rem);
     z-index: -1;
-    color: #f1f1f1ad;
     margin-top: calc(-100% + (-6em));
 
     @include header-slidein(slidein-top, 1.5s, 0.5s);
@@ -37,14 +35,9 @@
 
   &__banner-small {
     z-index: 1;
-    color: $main-white;
-    font-size: clamp(7rem, 20vw, 22.5rem);
-    text-transform: uppercase;
   }
 
   span {
-    font-weight: $font-bold;
-    color: #8f8f8ffd;
     z-index: 2;
   }
 
