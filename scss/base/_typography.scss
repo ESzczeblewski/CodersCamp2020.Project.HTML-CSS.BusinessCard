@@ -13,6 +13,14 @@ body {
 h3 {
   font-weight: 700;
   font-size: clamp(1rem, 8vw, 6.5rem);
+  color: #585858;
+}
+
+p,
+a {
+  @media (min-width: 800px) {
+    font-size: 1.8rem;
+  }
 }
 
 .btn {
