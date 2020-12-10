@@ -4,10 +4,12 @@
 @import './layout/navigation';
 @import './layout/header';
 @import './layout/motto';
+@import './layout/app';
 
 body {
+  position: relative;
+  overflow-x: hidden;
   max-width: 90em;
   margin: auto;
-  position: relative;
   padding: 0 1em;
 }
