@@ -97,6 +97,14 @@ body {
 h3 {
   font-weight: 700;
   font-size: clamp(1rem, 8vw, 6.5rem);
+  color: #585858;
+}
+
+@media (min-width: 800px) {
+  p,
+  a {
+    font-size: 1.8rem;
+  }
 }
 
 .btn {
@@ -717,8 +725,9 @@ h3 {
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   max-width: 90em;
   margin: auto;
-  position: relative;
   padding: 0 1em;
 }
