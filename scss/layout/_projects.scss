@@ -1,0 +1,112 @@
+@import '../base/mixins';
+@import '../base/variables';
+
+.projects {
+  position: relative;
+  max-width: 70.5em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media (min-width: 580px) {
+    height: 80vw;
+  }
+
+  &__heading {
+    margin-bottom: 2em;
+    @media (min-width: 580px) {
+      text-align: center;
+    }
+  }
+
+  .slides {
+    margin-bottom: 2em;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    @include article-border(0, 60%);
+
+    @media (min-width: 580px) {
+      .border {
+        height: 70%;
+        max-width: 100%;
+      }
+    }
+
+    .slide {
+      position: relative;
+      overflow-x: hidden;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+
+      scroll-snap-align: start;
+
+      @media (min-width: 580px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      &__desc {
+        background-color: #ffffff;
+        padding-left: 1em;
+        max-width: 80%;
+        padding-bottom: 2em;
+
+        h3 {
+          margin-bottom: 0.5em;
+        }
+
+        p {
+          margin-bottom: 1em;
+          line-height: 1.8rem;
+        }
+      }
+
+      &__img {
+        width: 80%;
+        @media (min-width: 580px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+    width: 70%;
+    max-width: 15em;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #adadad;
+      border-radius: 60%;
+      width: 1.5em;
+      height: 1.5em;
+      text-decoration: none;
+      font-size: 2rem;
+      color: #000000;
+    }
+
+    a:active {
+      background-color: $main-blue;
+    }
+  }
+}
