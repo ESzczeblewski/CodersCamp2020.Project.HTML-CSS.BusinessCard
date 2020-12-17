@@ -85,3 +85,13 @@ a {
     color: $motto-font;
   }
 }
+
+.projects {
+  &__nav {
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: $main-black;
+    }
+  }
+}
