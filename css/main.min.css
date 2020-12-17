@@ -100,6 +100,12 @@ h3 {
   color: #585858;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: clamp(1rem, 6vw, 4rem);
+  color: #585858;
+}
+
 @media (min-width: 800px) {
   p,
   a {
@@ -792,6 +798,7 @@ h3 {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
 
 @media (min-width: 700px) {
@@ -880,6 +887,56 @@ h3 {
 
 .projects__nav a:active {
   background-color: #2046f2;
+}
+
+.blog {
+  max-width: 65em;
+  margin: auto;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__heading {
+  margin-bottom: 2em;
+}
+
+.blog .posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 980px) {
+  .blog .posts {
+    margin-bottom: 5em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.blog .posts__article {
+  width: 80%;
+  max-width: 18em;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+@media (min-width: 980px) {
+  .blog .posts__article {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.blog .posts__article * {
+  margin-bottom: 1em;
+}
+
+.blog .posts__article img {
+  width: 100%;
 }
 
 body {

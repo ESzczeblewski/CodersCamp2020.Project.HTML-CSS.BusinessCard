@@ -37,6 +37,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scroll-snap-align: start;
 
     @media (min-width: 700px) {
       overflow-x: hidden;

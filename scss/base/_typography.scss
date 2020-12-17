@@ -16,6 +16,12 @@ h3 {
   color: #585858;
 }
 
+h4 {
+  font-weight: 700;
+  font-size: clamp(1rem, 6vw, 4rem);
+  color: #585858;
+}
+
 p,
 a {
   @media (min-width: 800px) {
