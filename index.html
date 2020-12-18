@@ -137,15 +137,26 @@
         </div>
         <button class="btn">Load More</button>
     </article>
-    <article>
-        <h3>Contact Me</h3>
-        <!-- <img src="./img/map.jpg" alt=""> -->
-        <form action="#">
-            <input type="text">
-            <input type="text">
-            <textarea name="" id="""></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <article class="contact">
+        <h3 class="contact__heading">Contact Me</h3>
+        <div class="contact__wrapper">
+            <img src="./img/map.jpg" alt="">
+            <form action="#">
+                <div class="group">
+                    <input id="name" type="text" required>
+                    <label for="name">Your name</label>
+                </div>
+                <div class="group">
+                    <input id="email" type="text" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
     </article>
     <footer>
         <p>Designed by: James Martin</p>
