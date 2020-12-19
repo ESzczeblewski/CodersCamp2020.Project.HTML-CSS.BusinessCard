@@ -1158,6 +1158,36 @@ h4 {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  max-width: 70em;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    padding-top: 8em;
+  }
+}
+
+.footer__designer {
+  color: #585858;
+}
+
+.footer__logo {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+@media (min-width: 1100px) {
+  .footer__logo {
+    font-size: 4.5rem;
+  }
+}
+
 body {
   position: relative;
   overflow-x: hidden;
