@@ -1,43 +1,102 @@
 @import '../base/variables';
+@import '../base/mixins';
 
 .contact {
+  position: relative;
   margin-top: 6em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @include article-border(0, 90%);
+
+  .border {
+    top: 55%;
+    @media (min-width: 600px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+    }
+
+    @media (min-width: 1000px) {
+      height: 85%;
+      top: 60%;
+    }
+  }
+
   &__heading {
     margin-bottom: 1.5em;
+
+    @media (min-width: 1000px) {
+      margin-bottom: 2.5em;
+    }
   }
 
   &__wrapper {
+    position: relative;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    img {
+    @media (min-width: 600px) {
+      padding-top: 3em;
+    }
+
+    @media (min-width: 1000px) {
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .map {
+      position: relative;
       width: 100%;
       margin-bottom: 2.5em;
       max-width: 57rem;
+
+      @media (min-width: 1000px) {
+        width: 48%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .map__pin {
+        position: absolute;
+        left: 45%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: 10%;
+      }
     }
 
     form {
-      max-width: 80%;
-      margin: auto;
+      width: 90%;
       position: relative;
+      background-color: $main-white;
       display: flex;
       flex-direction: column;
 
       @media (min-width: 600px) {
+        width: 100%;
         max-width: 57rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
       }
 
+      @media (min-width: 1000px) {
+        width: 50%;
+        margin-left: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+
       button {
-        align-self: flex-end;
+        margin-left: auto;
       }
     }
 
@@ -60,7 +119,6 @@
       input,
       textarea {
         display: block;
-        font-size: 1.8rem;
         border: 1px solid #b4b4b4;
         width: 100%;
         padding: 0.5em 0.6em;
@@ -79,21 +137,20 @@
         top: 50%;
         transform: translateY(-50%);
         transition: all 0.5s ease;
-        font-size: 1.4rem;
-        color: #585858;
-
-        @media (min-width: 600px) {
-          font-size: 1.6rem;
-        }
       }
 
       input:focus + label,
-      input:valid + label,
+      input:valid + label {
+        top: -50%;
+      }
+
       textarea:focus + label,
       textarea:valid + label {
-        top: -50%;
-        color: $main-blue;
-        font-weight: 700;
+        top: -40%;
+
+        @media (min-width: 600px) {
+          top: -15%;
+        }
       }
     }
   }

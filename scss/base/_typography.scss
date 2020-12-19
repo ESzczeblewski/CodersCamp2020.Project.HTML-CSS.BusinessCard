@@ -101,3 +101,27 @@ a {
     }
   }
 }
+
+.contact {
+  input,
+  textarea {
+    font-size: 1.8rem;
+  }
+
+  input:focus + label,
+  input:valid + label,
+  textarea:focus + label,
+  textarea:valid + label {
+    color: $main-blue;
+    font-weight: 700;
+  }
+
+  label {
+    font-size: 1.4rem;
+    color: #585858;
+
+    @media (min-width: 600px) {
+      font-size: 1.6rem;
+    }
+  }
+}

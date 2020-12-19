@@ -190,6 +190,30 @@ h4 {
   color: #000000;
 }
 
+.contact input,
+.contact textarea {
+  font-size: 1.8rem;
+}
+
+.contact input:focus + label,
+.contact input:valid + label,
+.contact textarea:focus + label,
+.contact textarea:valid + label {
+  color: #2046f2;
+  font-weight: 700;
+}
+
+.contact label {
+  font-size: 1.4rem;
+  color: #585858;
+}
+
+@media (min-width: 600px) {
+  .contact label {
+    font-size: 1.6rem;
+  }
+}
+
 .btn {
   background-color: transparent;
   color: #2046f2;
@@ -940,39 +964,122 @@ h4 {
 }
 
 .contact {
+  position: relative;
   margin-top: 6em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact .border {
+  background: #2046f2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 58em;
+  height: 90%;
+  z-index: -1;
+}
+
+.contact .border__inner {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  left: 0.5em;
+}
+
+.contact .border {
+  top: 55%;
+}
+
+@media (min-width: 600px) {
+  .contact .border {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact .border {
+    height: 85%;
+    top: 60%;
+  }
 }
 
 .contact__heading {
   margin-bottom: 1.5em;
 }
 
+@media (min-width: 1000px) {
+  .contact__heading {
+    margin-bottom: 2.5em;
+  }
+}
+
 .contact__wrapper {
+  position: relative;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact__wrapper img {
+@media (min-width: 600px) {
+  .contact__wrapper {
+    padding-top: 3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact__wrapper {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contact__wrapper .map {
+  position: relative;
   width: 100%;
   margin-bottom: 2.5em;
   max-width: 57rem;
 }
 
+@media (min-width: 1000px) {
+  .contact__wrapper .map {
+    width: 48%;
+  }
+}
+
+.contact__wrapper .map img {
+  width: 100%;
+}
+
+.contact__wrapper .map .map__pin {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+}
+
 .contact__wrapper form {
-  max-width: 80%;
-  margin: auto;
+  width: 90%;
   position: relative;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: 600px) {
   .contact__wrapper form {
+    width: 100%;
     max-width: 57rem;
     flex-direction: row;
     flex-wrap: wrap;
@@ -980,8 +1087,17 @@ h4 {
   }
 }
 
+@media (min-width: 1000px) {
+  .contact__wrapper form {
+    width: 50%;
+    margin-left: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
 .contact__wrapper form button {
-  align-self: flex-end;
+  margin-left: auto;
 }
 
 .contact__wrapper .group {
@@ -1005,7 +1121,6 @@ h4 {
 .contact__wrapper .group input,
 .contact__wrapper .group textarea {
   display: block;
-  font-size: 1.8rem;
   border: 1px solid #b4b4b4;
   width: 100%;
   padding: 0.5em 0.6em;
@@ -1024,23 +1139,23 @@ h4 {
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.5s ease;
-  font-size: 1.4rem;
-  color: #585858;
-}
-
-@media (min-width: 600px) {
-  .contact__wrapper .group label {
-    font-size: 1.6rem;
-  }
 }
 
 .contact__wrapper .group input:focus + label,
-.contact__wrapper .group input:valid + label,
+.contact__wrapper .group input:valid + label {
+  top: -50%;
+}
+
 .contact__wrapper .group textarea:focus + label,
 .contact__wrapper .group textarea:valid + label {
-  top: -50%;
-  color: #2046f2;
-  font-weight: 700;
+  top: -40%;
+}
+
+@media (min-width: 600px) {
+  .contact__wrapper .group textarea:focus + label,
+  .contact__wrapper .group textarea:valid + label {
+    top: -15%;
+  }
 }
 
 body {
