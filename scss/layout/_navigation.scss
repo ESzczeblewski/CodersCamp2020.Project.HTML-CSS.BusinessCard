@@ -20,17 +20,12 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   @media (min-width: 1100px) {
     padding-top: 0.5em;
     padding-right: 7.5em;
     padding-bottom: 0;
     padding-left: 7.5em;
-  }
-
-  &__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   &__list {
@@ -41,7 +36,6 @@
     top: 2.1em;
     left: 100%;
     transition: all 0.3s ease-in;
-    cursor: pointer;
     @media (min-width: 800px) {
       position: relative;
       width: auto;
@@ -56,7 +50,7 @@
       margin: 1em 0;
       text-align: center;
       text-transform: uppercase;
-      z-index: 0;
+      z-index: 1;
       color: $main-white;
       @media (min-width: 800px) {
         transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
