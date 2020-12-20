@@ -96,8 +96,14 @@ body {
 
 h3 {
   font-weight: 700;
-  font-size: clamp(1rem, 8vw, 6.5rem);
+  font-size: clamp(1rem, 5vw, 4rem);
   color: #585858;
+}
+
+@media (min-height: 515px) {
+  h3 {
+    font-size: clamp(1rem, 8vw, 6.5rem);
+  }
 }
 
 h4 {
@@ -794,7 +800,7 @@ h4 {
   margin: auto;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -821,9 +827,10 @@ h4 {
   left: 0.5em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (min-height: 700px) {
   .projects {
     height: 85vh;
+    padding-bottom: 2em;
   }
   .projects .border {
     top: 55%;
@@ -868,7 +875,7 @@ h4 {
   flex-shrink: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (min-height: 700px) {
   .projects .slides .slide {
     padding-top: 5%;
     flex-direction: row;

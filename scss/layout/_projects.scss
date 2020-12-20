@@ -7,15 +7,16 @@
   margin: auto;
   margin-top: 2em;
   margin-bottom: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 4em;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 
   @include article-border(0, 60%);
 
-  @media (min-width: 700px) {
+  @media (min-width: 700px) and (min-height: 700px) {
     height: 85vh;
+    padding-bottom: 2em;
     .border {
       top: 55%;
       height: 73%;
@@ -55,7 +56,7 @@
       align-items: center;
       flex-shrink: 0;
 
-      @media (min-width: 700px) {
+      @media (min-width: 700px) and (min-height: 700px) {
         padding-top: 5%;
         flex-direction: row;
         align-items: center;
@@ -86,6 +87,7 @@
 
       &__img {
         width: 80%;
+
         @media (min-width: 700px) {
           width: 60%;
         }
