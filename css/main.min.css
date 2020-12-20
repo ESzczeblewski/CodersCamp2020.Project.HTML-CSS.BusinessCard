@@ -714,7 +714,13 @@ h4 {
 
 .app__phone {
   transform: rotate(-20deg);
-  width: clamp(10em, 40vw, 25em);
+  width: clamp(10em, 28vw, 25em);
+}
+
+@media (min-height: 515px) {
+  .app__phone {
+    width: clamp(10em, 40vw, 25em);
+  }
 }
 
 @media (min-width: 580px) {
