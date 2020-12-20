@@ -153,8 +153,14 @@ h4 {
 }
 
 .header__banner {
-  font-size: clamp(18rem, 50vw, 54rem);
+  font-size: clamp(10rem, 40vw, 54rem);
   color: #f1f1f1ad;
+}
+
+@media (min-height: 515px) {
+  .header__banner {
+    font-size: clamp(18rem, 50vw, 54rem);
+  }
 }
 
 .header__banner-small {
@@ -497,10 +503,16 @@ h4 {
   height: 60vh;
   width: 90%;
   max-width: 63em;
-  min-height: 35em;
+  min-height: 28em;
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-height: 515px) {
+  .header {
+    min-height: 35em;
+  }
 }
 
 @media (min-width: 1000px) {

@@ -8,10 +8,14 @@
   height: 60vh;
   width: 90%;
   max-width: 63em;
-  min-height: 35em;
+  min-height: 28em;
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media (min-height: 515px) {
+    min-height: 35em;
+  }
 
   @media (min-width: 1000px) {
     height: 100vh;
