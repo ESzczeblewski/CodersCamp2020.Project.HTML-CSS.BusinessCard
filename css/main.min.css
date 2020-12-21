@@ -226,10 +226,24 @@ h4 {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 90em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+section {
+  padding-top: 5.5rem;
+}
+
 .section-app-web {
   position: relative;
-  margin-top: 4.3em;
-  margin-bottom: 4.1em;
   max-height: 70rem;
   max-width: 76em;
   display: flex;
@@ -502,10 +516,24 @@ h4 {
   top: 1em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 90em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+section {
+  padding-top: 5.5rem;
+}
+
 .section-app-web {
   position: relative;
-  margin-top: 4.3em;
-  margin-bottom: 4.1em;
   max-height: 70rem;
   max-width: 76em;
   display: flex;
@@ -697,7 +725,6 @@ h4 {
   max-height: 26em;
   max-width: 62.5em;
   margin: auto;
-  margin-top: 1em;
   display: flex;
   align-items: flex-end;
 }
@@ -815,8 +842,6 @@ h4 {
   position: relative;
   max-width: 70.5em;
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
   padding-bottom: 4em;
   display: flex;
   flex-direction: column;
@@ -964,7 +989,6 @@ h4 {
 .blog {
   max-width: 65em;
   margin: auto;
-  margin-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1013,8 +1037,7 @@ h4 {
 
 .contact {
   position: relative;
-  margin-top: 6em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1041,13 +1064,20 @@ h4 {
   left: 0.5em;
 }
 
+@media (min-width: 1000px) {
+  .contact {
+    margin-bottom: 3em;
+  }
+}
+
 .contact .border {
-  top: 55%;
+  top: 60%;
 }
 
 @media (min-width: 600px) {
   .contact .border {
-    top: 50%;
+    height: 82%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -45%);
   }
@@ -1241,12 +1271,4 @@ h4 {
   .footer__logo {
     font-size: 4.5rem;
   }
-}
-
-body {
-  position: relative;
-  overflow-x: hidden;
-  max-width: 90em;
-  margin: auto;
-  padding: 0 1em;
 }
