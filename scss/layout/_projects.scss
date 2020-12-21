@@ -10,14 +10,14 @@
   flex-direction: column;
   overflow: hidden;
 
-  @include article-border(0, 60%);
+  @include article-border(0, 50%);
 
   @media (min-width: 700px) and (min-height: 700px) {
-    height: 85vh;
+    height: 90vh;
     padding-bottom: 2em;
     .border {
-      top: 55%;
-      height: 73%;
+      top: 60%;
+      height: 67%;
       max-width: 80%;
       left: 15%;
     }

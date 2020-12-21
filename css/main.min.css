@@ -242,10 +242,17 @@ section {
   padding-top: 5.5rem;
 }
 
+@media (min-width: 1000px) {
+  section {
+    margin-top: 3em;
+  }
+}
+
 .section-app-web {
   position: relative;
   max-height: 70rem;
   max-width: 76em;
+  margin-bottom: 2.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,6 +260,7 @@ section {
 
 @media (min-width: 580px) {
   .section-app-web {
+    min-height: 20em;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -532,10 +540,17 @@ section {
   padding-top: 5.5rem;
 }
 
+@media (min-width: 1000px) {
+  section {
+    margin-top: 3em;
+  }
+}
+
 .section-app-web {
   position: relative;
   max-height: 70rem;
   max-width: 76em;
+  margin-bottom: 2.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,6 +558,7 @@ section {
 
 @media (min-width: 580px) {
   .section-app-web {
+    min-height: 20em;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -856,7 +872,7 @@ section {
   transform: translateY(-50%);
   width: 100%;
   max-width: 58em;
-  height: 60%;
+  height: 50%;
   z-index: -1;
 }
 
@@ -871,12 +887,12 @@ section {
 
 @media (min-width: 700px) and (min-height: 700px) {
   .projects {
-    height: 85vh;
+    height: 90vh;
     padding-bottom: 2em;
   }
   .projects .border {
-    top: 55%;
-    height: 73%;
+    top: 60%;
+    height: 67%;
     max-width: 80%;
     left: 15%;
   }
