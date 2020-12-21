@@ -21,5 +21,8 @@ Project is created with:
 - Simple contact form
 - Responsive Web Design
 
+## Designed by: Web Donut
+* https://www.webdonut.net/personal.html
+
 ## Live 
 * https://eszczeblewski.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
