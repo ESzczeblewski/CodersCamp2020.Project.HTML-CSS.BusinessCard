@@ -682,7 +682,7 @@ h4 {
 
 .app {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-left: auto;
   margin-top: 4.1em;
   margin-bottom: 4.1em;
@@ -719,19 +719,12 @@ h4 {
 }
 
 .app__phone {
-  transform: rotate(-20deg);
   width: clamp(10em, 28vw, 25em);
 }
 
 @media (min-height: 515px) {
   .app__phone {
-    width: clamp(10em, 40vw, 25em);
-  }
-}
-
-@media (min-width: 580px) {
-  .app__phone {
-    transform: rotate(-40deg);
+    width: clamp(10em, 40vw, 35em);
   }
 }
 

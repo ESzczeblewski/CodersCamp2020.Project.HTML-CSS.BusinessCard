@@ -2,7 +2,7 @@
 
 .app {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-left: auto;
   margin-top: 4.1em;
   margin-bottom: 4.1em;
@@ -36,15 +36,15 @@
   }
 
   &__phone {
-    transform: rotate(-20deg);
+    // transform: rotate(-20deg);
     width: clamp(10em, 28vw, 25em);
 
     @media (min-height: 515px) {
-      width: clamp(10em, 40vw, 25em);
+      width: clamp(10em, 40vw, 35em);
     }
 
     @media (min-width: 580px) {
-      transform: rotate(-40deg);
+      // transform: rotate(-40deg);
     }
   }
 }
