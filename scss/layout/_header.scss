@@ -34,7 +34,7 @@
     z-index: -1;
     margin-top: calc(-100% + (-6em));
 
-    @include header-slidein(slidein-top, 1.5s, 0.5s);
+    @include header-slidein(slidein-top, 1.3s, 0.2s);
   }
 
   &__banner-small {
@@ -50,7 +50,7 @@
     left: -100%;
     top: 30%;
 
-    @include header-slidein(slidein-left, 1s, 1s);
+    @include header-slidein(slidein-left, 1s, 0.5s);
 
     @media (min-width: 1000px) {
       top: 35%;
@@ -62,7 +62,7 @@
     right: -100%;
     bottom: 25%;
 
-    @include header-slidein(slidein-right, 1s, 1s);
+    @include header-slidein(slidein-right, 1s, 0.5s);
 
     @media (min-width: 1000px) {
       bottom: 35%;
