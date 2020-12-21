@@ -1,7 +1,6 @@
 @import '../base/variables';
 .web {
   position: relative;
-  overflow: hidden;
   margin-right: auto;
   margin-top: 4.5em;
   margin-bottom: 4.1em;
@@ -22,7 +21,7 @@
     margin-bottom: 3em;
 
     @media (min-width: 580px) {
-      width: clamp(20%, 50%, 20em);
+      width: clamp(20%, 40%, 20em);
       margin-bottom: 0;
     }
 
@@ -44,7 +43,7 @@
     order: 1;
     @media (min-width: 580px) {
       position: absolute;
-      left: -10%;
+      left: 0;
       width: clamp(10em, 50vw, 55em);
       order: 0;
     }

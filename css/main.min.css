@@ -682,8 +682,12 @@ h4 {
 
 .app {
   position: relative;
+<<<<<<< HEAD
   overflow-x: hidden;
   margin-left: auto;
+=======
+  margin: auto;
+>>>>>>> web
   margin-top: 4.1em;
   margin-bottom: 4.1em;
   max-height: 70rem;
@@ -730,7 +734,6 @@ h4 {
 
 .web {
   position: relative;
-  overflow: hidden;
   margin-right: auto;
   margin-top: 4.5em;
   margin-bottom: 4.1em;
@@ -756,7 +759,7 @@ h4 {
 
 @media (min-width: 580px) {
   .web__heading {
-    width: clamp(20%, 50%, 20em);
+    width: clamp(20%, 40%, 20em);
     margin-bottom: 0;
   }
 }
@@ -781,7 +784,7 @@ h4 {
 @media (min-width: 580px) {
   .web__laptop {
     position: absolute;
-    left: -10%;
+    left: 0;
     width: clamp(10em, 50vw, 55em);
     order: 0;
   }
