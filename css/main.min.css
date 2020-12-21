@@ -682,7 +682,6 @@ h4 {
 
 .app {
   position: relative;
-  overflow: hidden;
   margin-left: auto;
   margin-top: 4.1em;
   margin-bottom: 4.1em;
@@ -1220,7 +1219,10 @@ h4 {
 }
 
 body {
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> app
   overflow-x: hidden;
   max-width: 90em;
   margin: auto;
